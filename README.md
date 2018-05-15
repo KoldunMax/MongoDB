@@ -94,7 +94,7 @@
 `Был получен штат -Minnesota-`
 
   * Запрос для поиска всех активных людей из штата Minnesota
-     ** db.users.aggregate([{$match: { $and: [{address: {$regex: /(Minnesota)/}}, {isActive: true}]}},{$project: {_id: 0, name: 1, address: 1, favoriteFruit: 1}}]).pretty();
+  	* db.users.aggregate([{$match: { $and: [{address: {$regex: /(Minnesota)/}}, {isActive: true}]}},{$project: {_id: 0, name: 1, address: 1, favoriteFruit: 1}}]).pretty();
   
   * Ответ:
       *  {
