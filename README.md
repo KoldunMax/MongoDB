@@ -7,7 +7,7 @@
   * 2018-05-15T02:23:30.836+0300    imported 844 documents
   
 # 0 - Накатить бэкап базы
-  `создал папку backaps`
+  `создал папку backups`
  * Запрос:
     * mongodump --db users --out ./backups/
  * Ответ:
