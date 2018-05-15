@@ -67,9 +67,9 @@
         }
 
    * Запрос через порядковый номер:
-	* db.users.aggregate([{$skip: Math.ceil(avg_common["age"]+avg_alaska_age["avg_alaska"])}, {$match: {friends: {$elemMatch: {name: {$regex: /(Dennis )/}}}}}, {$project: {name: 1, friends: 1,address: 1}}, {$limit: 1}]).pretty();
+    * db.users.aggregate([{$skip: Math.ceil(avg_common["age"]+avg_alaska_age["avg_alaska"])}, {$match: {friends: {$elemMatch: {name: {$regex: /(Dennis )/}}}}}, {$project: {name: 1, friends: 1,address: 1}}, {$limit: 1}]).pretty();
    * Ответ:
-	* {
+    * {
         "_id" : ObjectId("5adf3c1544abaca147cdd539"),
         "name" : "Keller Nixon",
         "address" : "591 Jamison Lane, Idamay, Minnesota, 3128",
@@ -87,7 +87,8 @@
                         "name" : "Dennis Randolph"
                 }
              ]
-	}
+	};
+	
 `Получилось тоже самое, сделал так, потому как до конца не понял что имеется под видом порядковый номер`   
 # 4 - Найти активных людей из того же штата, что и предыдущий человек и посмотреть какой фрукт любят больше всего в этом штате (аггрегация) 
 `Был получен штат -Minnesota-`
