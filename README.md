@@ -1,5 +1,5 @@
 * Импорт БД:
-** mongoimport --db users ./users.json
+  **mongoimport --db users ./users.json
 * Результат импорта:
   ** 2018-05-15T02:23:30.288+0300    no collection specified
   ** 2018-05-15T02:23:30.295+0300    using filename 'users' as collection
